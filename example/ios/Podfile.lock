@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - match_bundle_paths (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - match_bundle_paths (from `.symlinks/plugins/match_bundle_paths/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  match_bundle_paths:
+    :path: ".symlinks/plugins/match_bundle_paths/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  match_bundle_paths: c0e0a76c2a7742551af4b1ed32063202a15ebd1f
+
+PODFILE CHECKSUM: 083258d7f5e80b42ea9bfee905fe93049bc04c64
+
+COCOAPODS: 1.8.4
