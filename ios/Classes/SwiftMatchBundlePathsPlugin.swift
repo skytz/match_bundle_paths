@@ -33,7 +33,11 @@ public class SwiftMatchBundlePathsPlugin: NSObject, FlutterPlugin {
                 if fileAttributes.isRegularFile! {
                     let fileString = fileURL.absoluteString;
                     if regex.numberOfMatches(in: fileString, options: [], range: NSRange(location: 0, length: fileString.count)) > 0 {
-                        matchedPaths.append(fileString);
+                        if fileString.hasPrefix("file://") {
+                            matchedPaths.append(String(fileString.dropFirst(7)));
+                        } else {
+                            matchedPaths.append(fileString);
+                        }
                     }
                 }
             } catch let error {
